@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unicycle Rental</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/joa1dgh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/joa1dgh.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <a href="index.html"><img class="brandImage" src="images/logo.png" width=""></a>
+            <a href="index.html" class="logo">Wynkle Unicycle</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="rental.html">Rental</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-6 col-m-12 col-l-6">
+            <div class="title">
+                <h1 class="title_heading">Rental Level : <span>Entry</span></h1>
+                <p class="title_text">Below are our top three most popular rental options. They offer a unicycle for every skill, style of riding and performance you would like.</p>
+            </div>
+        </div>
+        <div class="col-6 col-m-12 col-l-6">
+            <img src="images/unicycleStore.jpg" class="rental_image" alt="wynkle unicycle store">
+        </div>
+    </div>
+    <div class="row space">
+        <div class="col-m-12 col-4">
+            <div class="column_content">
+                <img class="product_image" src="images/s1.png" alt="unicyle one">
+                <h1 class="unicycle_type">Freeride S</h1>
+                <div class="bar Beginner" data-skill="Beginner"></div>
+                <p class="product_text">The FreeRide S is for people who want to enjoy riding a unicycle and/or or new to unicycling. Free Ride S is designed and built for beginners and for easy riding across city roads, crosswalks and other hard surfaces.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$49 - 2hrs <input type="radio"></p>
+                        <p>$50 - 2hrs <input type="radio"></p>
+                        <p>$75 - 3hrs <input type="radio"></p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-m-12 col-4">
+            <div class="column_content">
+                <img class="product_image" src="images/s3.png" alt="unicyle one">
+                <h1 class="unicycle_type">Freeride SV</h1>
+                <div class="bar Intermediate" data-skill="Intermediate"></div>
+                <p class="product_text">FreeRide SV provides more speed, balance and the agility that a more advanced rider is looking for. The SV lets the riders have a more dynamic ride experience. If you want to have a more challenging ride, the SV is the option for you.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$59 - 2hrs <input type="radio"></p>
+                        <p>$60 - 2hrs <input type="radio"></p>
+                        <p>$85 - 3hrs <input type="radio"></p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-m-12 col-4">
+            <div class="column_content">
+                <img class="product_image" src="images/s10.png" alt="unicyle s10">
+                <h1 class="unicycle_type">Freeride SL</h1>
+                <div class="bar Advance" data-skill="Advance"></div>
+                <p class="product_text">Looking for the best and top of the line? Then look no further. The SL is the flagship model that provides all the bell and whistles that an advance rider wants. SL has the latest technology of tires, balance and performance.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$75 - 2hrs <input type="radio"></p>
+                        <p>$100 - 2hrs <input type="radio"></p>
+                        <p>$125 - 3hrs <input type="radio"></p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-m-12">
+            <div class="title">
+                <h1 class="title_heading">Rental Level : <span>Extreme</span></h1>
+                <p class="title_text">Below are our top three most popular unicycles someone who is looking for an extreme unicycle experience. Take them on a mountain bike trail, out on a grassy hill or tear up the urban jungle!</p>
+            </div>
+        </div>
+        <div class="col-6 col-m-12">
+            <img src="images/actionShot.jpeg" class="rental_image" alt="wynkle unicycle store">
+        </div>
+    </div>
+    <div class="row space">
+        <div class="col-4 col-m-12">
+            <div class="column_content">
+                <img class="product_image" src="images/R1.png" alt="unicyle one">
+                <h1 class="unicycle_type">SLAYER R</h1>
+                <div class="bar Beginner" data-skill="Beginner"></div>
+                <p class="product_text">The Slayer R is for people who want a more challenging ride. This unicycle is best suited for people who have experience in unicycling and ready for a new adventure.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$49 - 2hrs</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-m-12">
+            <div class="column_content">
+                <img class="product_image" src="images/R3.png" alt="unicyle one">
+                <h1 class="unicycle_type">STRIKER RV</h1>
+                <div class="bar Intermediate" data-skill="Intermediate"></div>
+                <p class="product_text">Stricker RV. Sharp. Attack. Speed. This is what this unicycle can be described as. If you’re looking for a ride that is nimble, quick and agile, then this is the one for you.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$109 - 4hrs</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-m-12">
+            <div class="column_content">
+                <img class="product_image" src="images/R10.png" alt="unicyle s10">
+                <h1 class="unicycle_type">Victor RL</h1>
+                <div class="bar Advance" data-skill="Advance"></div>
+                <p class="product_text">The top of the line, best in class and most excitement and thrill one can have on a unicycle. With unmatched performance and speed, the Victor RL is the one for you.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$150 - 6hrs</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-m-12 col-6">
+            <div class="title">
+                <h1 class="title_heading">Rental Level: <span>Modern</span></h1>
+                <p class="title_text">These unicycles are what modern technology can provide to make the best unicycle experience one can have. These unicycles are made from the latest materials and cutting-edge software that makes riding as stream line as possible.</p>
+            </div>
+        </div>
+        <div class="col-m-12 col-6">
+            <img src="images/electricUnicycle.jpg" alt="wynkle unicycle store">
+        </div>
+    </div>
+    <div class="row space">
+        <div class="col-m-12 col-3 col-l-3">
+            <div class="column_content">
+                <img class="product_image" src="images/m1.png" alt="unicyle one">
+                <h1 class="unicycle_type">Wisp M</h1>
+                <div class="bar Beginner" data-skill="Beginner"></div>
+                <p class="product_text">The Wisp M is for people who want to enjoy riding a unicycle and or are new to unicycle. Wisp N is designed and built for beginners and for easy riding across city roads, crosswalks and other hard surfaces. The M1 is the entry-level modern unicycle.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$49 - 2hrs</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-m-12 col-3 col-l-3">
+            <div class="column_content">
+                <img class="product_image" src="images/m3.png" alt="unicyle one">
+                <h1 class="unicycle_type">Dhara MV</h1>
+                <div class="bar Intermediate" data-skill="Intermediate"></div>
+                <p class="product_text">Free Dhara MV provides more speed, balance and the agility that a more advance rider is looking for. The Dhara MV lets the riders have a more dynamic ride experience. Any one looking to have a more challenging ride, the MV is the option for you.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$109 - 4hrs</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-m-12 col-3 col-l-3">
+            <div class="column_content">
+                <img class="product_image" src="images/m10.png" alt="unicyle s10">
+                <h1 class="unicycle_type">Guava ML</h1>
+                <div class="bar Advance" data-skill="Advance"></div>
+                <p class="product_text">Looking for the best and top of the line, then look no futher. The ML is the flag ship that provides all the bell and whistlesn that an advance rider is wanting and looking for. ML has the latest technology of tires, balance and performance.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$150 - 6hrs</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-m-12 col-3 col-l-3">
+            <div class="column_content">
+                <img class="product_image" src="images/m10.3.png" alt="unicyle s10">
+                <h1 class="unicycle_type">Hydra ML-R</h1>
+                <div class="bar Advance" data-skill="Advance"></div>
+                <p class="product_text">The Hydra ML-R is the very best modern unicycle that is currently available. This model offers best in class handling, speed and satiability. This unicycle is tailor-made for anyone who wants an F1 race car experience on a unicycle.</p>
+                <div class="product_footer">
+                    <div class="product_footer_text">
+                        <p>$150 - 6hrs</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button onclick="myRental()">Reserve Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="footer_section col-4 col-m-12 col-l-4">
+            <p class="footer_text">Home to the best Unicycle since 1880s</p>
+        </div>
+        <div class="footer_section col-4 col-m-12 col-l-4">
+            <p class="footer_text">Wynkle Unicycle Rental Co.</p>
+        </div>
+        <div class="footer_section col-4 col-m-12 col-l-4">
+            <p></p>
+            <i class="fa fa-facebook-official size"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-yelp"></i>
+            <i class="fa fa-pinterest-p"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>
