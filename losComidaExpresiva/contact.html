@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/joa1dgh.css">
+    <script src="js/script.js"></script>
+
+
+    <title>Contact</title>
+</head>
+
+<body>
+
+  	<nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="images/logo.svg" width="30" height="30" alt="los comida expersiva logo">
+        </a>
+        <a class="navbar-brand" href="index.html">Los comida expresiva</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row Contact">
+            <div class="col-sm-6 ">
+                <div class="contactInfo">
+                    <img src="images/contactgraphic.jpg" alt="los comida expersiva contact">
+                </div>
+            </div>
+            <div class="col-sm-6 ContactForm">
+                <h1 class="contactTitle"><strong style="color:#000000">~</strong>Send us a message<strong style="color:#000000">~</strong></h1>
+                <form class="contactForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for=""></label>
+                            <input type="" class="form-control" id="" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for=""></label>
+                            <input type="" class="form-control" id="" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label type="email" class="form-control">Your Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="jane.doe@example.com">
+                    </div>
+
+                    <div class="form-group ">
+                        <label type="email" class="form-control">Your Phone</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="555-555-5555">
+                    </div>
+                    <div class="form-group form">
+                        <label type="email" class="form-control">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Leave use a message"></textarea>
+                    </div>
+
+                    <a href="#" target="_top"> <button id='mailbutton' class="btn btn-outline-primary iconButton">Submit</button></a>
+                </form>
+            </div>
+        </div>
+        <div class="row Contact">
+            <div class="col-sm">
+                <h1 class="headline"><strong style="color:#000000">~</strong> Media inquiries <strong style="color:#000000">~</strong></h1>
+                <p class="headline_copyText">Are you looking to create a special event catered to you? If so, choose an option below:</p>
+            </div>
+            <div class="col-sm-12">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle iconButton" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choose and option
+                    </button>
+                    <div id="CateringMenu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <p class="dropdown-item" onclick="myCatering(true)">Catering</p>
+                        <p class="dropdown-item" onclick="myTruckStop(true)">Truck Stop Requests</p>
+                        <p class="dropdown-item" onclick="myGeneral(true)">Something else</p>
+                    </div>
+                </div>
+            </div>
+            <div id="catering" class="col">
+                <div class="form-row">
+                    <h3 class="headline ContactFormTitle">For all catering requests, please leave a detail message.</h3>
+                </div>
+                <form class="CateringForm">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Your Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Your Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="jane.doe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Lets us know what you would like to have catered"></textarea>
+                    </div>
+                    <button class="btn btn-outline-primary iconButton">Submit</button>
+                </form>
+            </div>
+            <div id="truckStop" class="col">
+                <div class="form-row">
+                    <h3 class="headline ContactFormTitle">PLEASE COMPLETE ALL REQUIRED FIELDS & SUBMIT FORM.</h3>
+                </div>
+                <form class="TruckStopForm">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Contact Phone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Contact Email">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Special Event">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Name of Event">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Event Date">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <select id="inputState" class="form-control contact">
+                                    <option selected>Preferred Day Of Week</option>
+                                    <option>Monday</option>
+                                    <option>Tuesday</option>
+                                    <option>Wednesday</option>
+                                    <option>Thrusday</option>
+                                    <option>Friday</option>
+                                    <option>Saturday</option>
+                                    <option>Sunday</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select id="inputState" class="form-control contact">
+                                    <option selected>Preferred Start Time</option>
+                                    <option>11AM</option>
+                                    <option>11:30AM</option>
+                                    <option>12PM</option>
+                                    <option>12:30PM</option>
+                                    <option>1PM</option>
+                                    <option>6PM</option>
+                                    <option>6:30PM</option>
+                                    <option>7PM</option>
+                                    <option>10:30PM</option>
+                                    <option>Speical Request</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Adress">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Closest Major Cross Streets">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Anticipated Attendance">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control contact" placeholder="Parking Description">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <textarea class="form-control contact" id="exampleFormControlTextarea1" rows="3" placeholder="What makes this a great spot to create memories?"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary iconButton">Submit</button>
+                    </form>
+
+                </form>
+            </div>
+            <div id="general" class="col">
+                <div class="form-row">
+                    <h3 class="headline ContactFormTitle">For all other requests, please let us know.</h3>
+                </div>
+                <form class="CateringForm">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Your Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Your Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="jane.doe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Lets us know what kind of memory you would like to have"></textarea>
+                    </div>
+                    <button class="btn btn-outline-primary iconButton">Submit</button>
+                </form>
+            </div>
+            <div id="general" class="col">
+                <form class="CateringForm">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Your Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Your Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="jane.doe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Lets us know what you would like to have catered"></textarea>
+                    </div>
+                    <button class="btn btn-outline-primary iconButton">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row footer">
+            <div class="col-sm-3 footer_section">
+                <h3 class="col- footer_headline">Your Style</h3>
+                <p class="footer_headline_text">Express your style through different food choice, who you eat with and the people who you talk to.<br>
+                    <a class="link" href="menu.html">explore more</a>
+                </p>
+            </div>
+            <div class="col-sm-3 footer_section">
+                <h3 class="col- footer_headline">Your Story</h3>
+                <p class="footer_headline_text">Your story start off where you had your last meal. Start you new adventure <br>
+                    <a class="link" href="index.html">explore more</a>
+                </p>
+            </div>
+            <div class="col-sm-3 footer_section">
+                <h3 class="footer_headline">Your Memories</h3>
+                <p class="footer_headline_text">Start creating, expressing and sharing your memories when you visit us by sharing your photo.<br>
+                    <a class="link" href="https://www.instagram.com/jimtritt/?hl=en.html" target="_blank">explore more</a>
+                </p>
+            </div>
+            <div class="col-sm-3 footer_section">
+                <h3 class="col- footer_headline">Our Story</h3>
+                <p class="footer_headline_text">We are here to tell you our story through food, family and getting to know each other.
+                    <a class="link" href="menu.html">explore more</a>
+                </p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official footerIcons"></i></a>
+                    <a href="https://twitter.com/explore" target="_blank"><i class="fa fa-twitter footerIcons"></i></a>
+                    <a href="https://www.instagram.com/jimtritt/?hl=en.html" target="_blank"><i class="fa fa-instagram footerIcons"></i></a>
+                    <a href="https://www.yelp.com/" target="_blank"><i class="fa fa-yelp footerIcons"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <p class="copywrite">&copy; Copyright 2019 - 2020. All rights reserved. Los Comida Expresiva &#174;</p>
+            </div>
+        </div>
+    </div><!-- end of wrapper -->
+
+</body>
+
+</html>

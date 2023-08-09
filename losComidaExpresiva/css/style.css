@@ -1,0 +1,1391 @@
+/*COLORS:
+blue color: #00AFDE
+tan color: #FFE4BC
+oragne color: #FF5A32
+black: #2B1308
+
+*/
+@font-face {
+	font-family: 'Luchador-Regular';
+	src: url('/css/webfont/Luchador-Regular.eot') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: montserrat, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: montserrat, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.logo{
+    transform: scale(.8);
+}
+
+a.navbar-brand {
+    margin-right: 0px;
+}
+
+.nav.navbar.navbar-expand-lg.navbar-light {
+	background-color: #ffffff;
+}
+
+.navbar-brand {
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+	font-size: 1.8em;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+	color: #FF8B00;
+}
+
+.nav-item {
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #FF8B00;
+	font-weight: 900;
+}
+.jumbotron-fluid{
+    background-color: white;
+    padding-top: 0px;
+}
+
+
+.logo{
+        width: 70%;
+    height: auto;
+}
+
+.card-body {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 15px;
+}
+
+.CompanyName {
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	margin: auto;
+	padding-top: 6%;
+	font-size: 4em;
+	font-family: 'Luchador-Regular', Arial, sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+}
+
+.tagLine {
+	color: #ffffff;
+	margin: auto;
+	text-align: center;
+	font-family: 'montserrat',
+		sans-serif;
+	font-weight: 400;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.6em;
+	color: #000000;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+span {
+	color: #FF8B00;
+}
+
+a {
+	color: #FF8B00;
+	text-transform: uppercase;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: #F46D08;
+}
+
+.link {
+	color: #FF8B00;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.link {
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+
+.link::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #00AFDE 1%, rgba(0, 0, 0, 0) 40%);
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+
+	will-change: width;
+	transform: rotate(-2deg);
+	transform-origin: left bottom
+}
+
+.link:hover::before {
+	width: 0;
+}
+
+.link::before {
+	transition: width .1s ease-out;
+}
+
+.link:hover::before {
+	transition-duration: .15s;
+}
+
+.TitleCardHeader {
+	font-weight: bold;
+	font-size: 4.5em;
+	padding: 0px 30px;
+	padding-bottom: 20px;
+	color: #ffffff;
+	font-family: 'Luchador-Regular', Arial, sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+}
+
+.TitleCardHeader_Copy {
+	font-weight: 100;
+	font-size: 1.2em;
+	padding: 0px 30px;
+	color: #ffffff;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+}
+
+
+.TitleCardImageSpice {
+	background-image: url("../images/spice.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.TitleCardImageDip {
+	background-image: url("../images/dip.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.TitleCardImageTaco {
+	background-image: url("../images/tacos.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.colorOptionOne {
+	background-color: #2B1308;
+	padding: 40px
+}
+
+.colorOptionTwo {
+	background-color: #008B92;
+	padding: 40px
+}
+
+.colorOptionThree {
+	background-color: #00AFDE;
+	padding: 40px
+}
+
+.col-sm {
+	position: relative;
+}
+
+.SoicalMeidaGridImage {
+	position: relative;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.SoicalMeidaGrid {
+	position: relative;
+	width: 52%;
+	margin: auto;
+}
+
+.GrapicIcon {
+	position: relative;
+	width: 52%;
+	margin: auto;
+	padding-bottom: 40px;
+	display: flex;
+}
+
+.col-3.D {
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+button {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+button.btn.btn-outline-primary.buttonStyle.contactButton {
+	margin: 0px;
+}
+
+.buttonStyle {
+	width: 30%;
+	margin: 0px 25px;
+	margin-top: 25px;
+	font-size: 1.2em;
+	background-color: #ffffff;
+	color: #FF8B00;
+	border-radius: 50px;
+	border-color: transparent;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+.buttonStyle:hover {
+	background-color: #FF8B00;
+	border-color: transparent;
+}
+
+.iconBox_one {
+	background-color: #FF8B00;
+}
+
+.iconBox_two {
+	background-color: #FF2742;
+}
+
+.iconBox_three {
+	background-color: #008B92;
+}
+
+.iconBox_four {
+	background-color: #F6E6B2;
+}
+
+.iconButton {
+	position: relative;
+	width: 100%;
+	margin: 10px 0px;
+	font-size: 1.2em;
+	background-color: #ffffff;
+	border-color: #FF8B00;
+	border-width: 2.5px;
+	color: #FF8B00;
+	border-radius: 50px;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+.iconButton:hover {
+	background-color: #FF8B00;
+	color: #ffffff;
+	border-color: #FF8B00;
+}
+
+#contact {
+	background: #008B92;
+	color: #f4f4f4;
+	padding: 80px;
+	width: 100%;
+}
+
+#catering,
+#truckStop,
+#general {
+	display: none;
+	margin-bottom: 100px;
+}
+
+.contact {
+	margin: 10px;
+}
+
+textarea.form-control {
+	height: 100px;
+}
+
+.btn-default {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.col-md-8.col-md-offset-2 {
+	position: relative;
+	margin: auto;
+}
+
+.cardColorMain {
+	background-color: aqua;
+}
+
+.headline {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	color: #FF8B00;
+	text-transform: uppercase;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+}
+
+.headline_copyText {
+	position: relative;
+	margin: auto;
+	padding: 25px;
+	width: 50%;
+	text-align: center;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+}
+
+/* Location */
+
+.headline_copyText_location {
+	position: relative;
+	margin: auto;
+	text-align: left;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.phone {
+	color: #FF8B00;
+}
+
+.fa-phone:hover,
+.fa-envelope:hover,
+.fa-map-marker:hover {
+	color: #FF8B00;
+}
+
+.card {
+	margin: 25px;
+	border: 0px solid rgba(0, 0, 0, .125);
+}
+
+.map-container-6 {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+}
+
+.map-container-6 iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.row.text-center {
+	margin: 50px 25px;
+}
+
+.row.extra {
+	background-color: #;
+	position: relative;
+	margin: 25px 0px;
+}
+
+.extra {
+	position: relative;
+	text-align: center;
+}
+
+.day {
+	color: #FFFFFF;
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+	background-color: #FF8B00;
+	margin: 0px 20px;
+	min-height: 100px;
+}
+
+.col-sm-4.schedule {
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+.mealTime {
+	position: relative;
+	display: grid;
+	font-size: 2em;
+}
+
+ul.mealTime {
+	position: relative;
+	margin: 20px 0px;
+	padding-left: 0px;
+}
+
+.mealTime_info_day {
+	font-family: 'montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.mealTime_info_time {
+	font-family: 'montserrat', sans-serif;
+	font-weight: 100;
+}
+
+.locationIcon {
+	font-size: 4em;
+	padding-bottom: 20px;
+	color: #FF8B00;
+	display: flex;
+}
+
+.locationIconAddress {
+	position: relative;
+	background-color: aqua;
+	width: 100px;
+}
+
+/* Menu */
+
+.menuRow {
+	margin: 50px 0px;
+}
+
+.headline_menu {
+	position: relative;
+	margin: 25px;
+	padding-bottom: 25px;
+	padding-top: 50px;
+	padding-left: 25px;
+	color: #FF8B00;
+	text-transform: uppercase;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+}
+
+.foodCard {
+	position: relative;
+	background-color: #ffffff;
+	max-width: 45%;
+	display: inline-grid;
+	margin: auto;
+	box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.75);
+	min-height: 350px;
+	border-radius: 0%;
+}
+
+.cost {
+	position: relative;
+	font-size: 2.5em;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+	float: right;
+	padding-left: -4%;
+
+}
+
+.MenuLayout {
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+
+.MenuHeader {
+	position: relative;
+	width: 75%;
+	margin-right: 7px;
+	font-size: 1.3em;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+}
+
+.MenuCardHeader_Copy {
+	font-size: .85em;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+	padding-bottom: 10px;
+	border-bottom-color: #FF8B00;
+	border-bottom-style: solid;
+}
+
+p.optionsTitle {
+	padding-left: 20px;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+}
+
+ul.options {
+	margin: 0px 15px;
+	font-size: 1em;
+	list-style-type: circle
+}
+
+li {
+	padding: 0px;
+	font-size: .8em;
+}
+
+.options {
+	position: relative;
+	padding: 10px 20px;
+}
+
+.foodchoice {
+	margin: 0px 0px;
+	width: 50%;
+	position: relative;
+	float: left;
+	font-size: 1em;
+}
+
+.img-thumbnail {
+	padding: 0em;
+	background-color: #fff;
+	border: 0px solid transparent;
+	border-radius: 0rem;
+	max-width: 100%;
+	height: auto;
+}
+
+.TacoImage {
+	background-image: url(../images/Entreeimages_threetacos.jpg);
+	height: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.ChilesRellenosImage {
+	background-image: url(../images/Entreeimages_chilesRellenos.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.KakikImage {
+	background-image: url(../images/Entreeimages_Kakik.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.FiambreImage {
+	background-image: url(../images/Entreeimages_Fiambre.jpg);
+	height: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.HilachasImage {
+	background-image: url(../images/Entreeimages_Hilachas.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.TostadasImage {
+	background-image: url(../images/Entreeimages_Tostadas.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.PolloGuisadoImage {
+	background-image: url(../images/Stewsimages_PolloGuisado.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.CarneGuisadaImage {
+	background-image: url(../images/Stewsimages_CarneGuisada.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.JocondePolloImage {
+	background-image: url(../images/Stewsimages_JoconDePollo.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.TapadoImage {
+	background-image: url(../images/Stewsimages_Tapado.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.ChicharronesCarnitasImage {
+	background-image: url(../images/Snacksimages_Chicharrone.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;/
+}
+
+.ElotelocoImage {
+	background-image: url(../images/Snacksimages_EloteLoco.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.RellenitosImage {
+	background-image: url(../images/Snacksimages_Relllentitos.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;/
+}
+
+.AtolImage {
+	background-image: url(../images/Snacksimages_Atol.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.SuppliersImages{
+    margin-top: 2em;
+}
+.farmLogoEach {
+	position: relative;
+	float: left;
+	margin: 0 auto;
+    padding: 20px;
+}
+
+.col-sm-12.farmLogo {
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+
+
+/* About Us */
+
+.aboutUs {
+	padding: 50px;
+}
+
+.about {
+	padding: 10px;
+	float: left;
+	width: 50%;
+}
+  .chef{
+        width: 100%;
+        padding-left: 10px;
+      padding-right: 10px;
+      
+    }
+.aboutPhotos{
+	position: relative;
+}
+
+
+.aboutUs_title {
+	font-weight: bold;
+	margin: 0px 25px;
+	color: #FF8B00;
+	text-transform: uppercase;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+	text-align: center;
+}
+
+.AboutUs_text {
+	padding: 30px 0px;
+	margin: 0px 25px;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 100;
+
+}
+
+.AboutUs_chef {
+	padding: 0px 0px;
+	margin: 0px 25px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+	font-size: 3rem;
+}
+
+.AboutUs_chef_text {
+	padding: 0px 0px;
+	margin: 0px 25px;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 100;
+}
+
+.Newsletter {
+	margin: 75px 0px;
+}
+
+.Newsletter_background {
+	position: relative;
+	background-color: #008B92;
+	padding: 1px;
+	width: 75%;
+}
+
+.AboutUs_Newsletter {
+	position: relative;
+	margin: auto;
+	padding: 25px;
+}
+
+.AboutUs_NewsletterText {
+	position: relative;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding: 30px 0px;
+	color: #000000;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 100;
+}
+
+.AboutUs_NewsletterSignupText {
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.NewsLetterButton {
+	position: relative;
+	margin: 20px auto;
+	width: 50%;
+	display: block;
+}
+
+.NewsLetterButton:hover {
+	background-color: #FF8B00;
+	color: #ffffff;
+	border-color: #FF8B00;
+}
+
+.NewsletterEmail {
+	position: relative;
+	margin: auto;
+	width: 50%;
+}
+
+/*Contact */
+
+.Contact {
+	position: relative;
+	width: 75%;
+	margin: auto;
+}
+
+.col-sm-6.ContactForm {
+	padding: 0px 20px;
+}
+
+.row.Contact {
+	padding-top: 5em;
+}
+
+h2.contactTitle {
+	padding-top: 0px;
+}
+
+.contactTitle {
+	position: relative;
+	text-align: center;
+	color: #FF8B00;
+	text-transform: uppercase;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+}
+
+.contactTitle_text {
+	color: #ffffff;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.contactForm {
+	position: relative;
+	width: 90%;
+	margin: auto;
+}
+
+.form {
+	margin-top: 10px;
+}
+
+.dropdown {
+	position: relative;
+	margin: auto;
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+.dropdown-menu.show {
+	width: 100%;
+}
+
+.dropdown-item {
+	text-align: center;
+	font-family: 'montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+	color: #fff;
+	background-color: #FF8B00;
+	border-color: #FF8B00;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 100;
+}
+
+.ContactFormTitle {
+	font-size: 2em;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	width: 60%;
+}
+
+.CateringForm {
+	position: relative;
+	width: 60%;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid lightgray;
+}
+
+.TruckStopForm {
+	position: relative;
+	width: 60%;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid lightgray;
+}
+
+.CateringForm {
+	position: relative;
+	width: 60%;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid lightgray;
+}
+
+/* Footer */
+
+.footer {
+	position: relative;
+	/*    background-color: #008B92;*/
+	background-color: #fbfbfb;
+	padding: 75px 50px;
+}
+
+div.col-sm-2.footer_section {
+	position: relative;
+	padding: 25px;
+}
+
+.col-sm-3.footer_section {
+	padding: 0px 25px;
+}
+
+.footer_headline {
+	position: relative;
+	padding: 10px 0px;
+	width: 100%;
+	font-size: 2em;
+	color: #FF8B00;
+	font-family: 'Luchador-Regular', sans-serif;
+	font-style: italic;
+	letter-spacing: 7px;
+}
+
+.footer_headline_text {
+	font-size: 1.2em;
+	color: #000000;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.icons {
+	position: relative;
+	display: flex;
+	width: 100%;
+	padding: 20px 0px;
+	font-size: 2em;
+}
+
+i {
+	color: #FF8B00;
+}
+
+i:hover {
+	color: #000000;
+}
+
+.footerIcons {
+	position: relative;
+	margin-right: 40px;
+}
+
+.copywrite {
+	text-align: center;
+	font-family: 'montserrat',
+		sans-serif;
+	font-weight: 100;
+	margin-top: 20px;
+}
+
+@media (max-width: 890px) {
+	.headline {
+		padding: 25px 0px;
+	}
+
+	.CompanyPhotosMobile {
+		position: relative;
+		display: contents;
+	}
+
+	.CompanyPhotos {
+		position: relative;
+		float: left;
+		width: 50%;
+height: 100%;
+	}
+
+
+	a.link {
+		position: relative;
+		margin: auto;
+		padding-top: 15px;
+	}
+
+	.mobileHastTag {
+		position: relative;
+		color: red;
+		font-size: .5em;
+	}
+
+	.headline_copyText {
+		position: relative;
+		padding: 0px;
+		font-size: 1.2em;
+		color: #000000;
+		font-family: 'montserrat', sans-serif;
+		font-weight: 200;
+	}
+
+	/* homepage */
+
+	.buttonStyle {
+		width: 55%;
+		position: relative;
+		margin: 0px 100px;
+		margin-top: 25px;
+	}
+
+	button#mailbutton {
+		position: relative;
+		margin: auto;
+		top: 10px;
+	}
+
+	.SoicalMeidaGrid {
+		position: relative;
+		margin: auto;
+		min-width: 100%;
+	}
+
+
+	.Stay {
+		position: relative;
+		display: flex;
+		width: 300%;
+	}
+
+	.Remove {
+		display: none;
+	}
+
+	.GrapicIcon {
+		position: relative;
+		margin: auto;
+		display: grid;
+		width: 100%;
+	}
+
+
+	.col-3.D {
+		position: relative;
+		margin: auto;
+		min-width: 50%;
+		margin-bottom: 20px;
+		display: inline-block;
+		float: left;
+	}
+
+	/* Location */
+
+	/* Menu */
+
+	.foodCard {
+		max-width: 100%;
+		margin: 25px;
+	}
+
+	.img-thumbnail {
+		padding: 6.3em;
+		background-color: #fff;
+		max-width: 100%;
+		border: 0px solid transparent;
+		border-radius: 0rem;
+	}
+
+
+	.TitleCardImage {
+		position: relative;
+		height: 350px;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;/
+	}
+
+	.farmLogo {
+		display: none;
+	}
+
+	/* Contact */
+
+	h2.contactTitle {
+		padding-top: 2em;
+	}
+
+	/* Footer */
+	.footer_section {
+		margin: 25px 0px
+	}
+
+	.footer_headline {
+		text-align: center;
+		font-size: 1em;
+		padding: 10px 10px;
+		letter-spacing: 4px;
+	}
+
+	.footer_headline_text {
+		text-align: center;
+	}
+
+	.icons {
+		position: relative;
+		display: inline-block;
+		font-size: 1.7em;
+		width: 100%;
+		float: left;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.fa {
+		position: relative;
+		margin: auto;
+		padding: 10px;
+	}
+    
+}
+
+@media (max-width: 600px) {
+/*
+    img{
+        width: 50%;
+    vertical-align: middle;
+    }
+*/
+    
+    .SuppliersImages{
+        margin-top: 0px;
+    }
+    .apple{
+        width: 50%;
+        float: none;
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+    }
+    .farmLogo{
+        position: relative;
+    }
+    .farmLogoEach {
+    position: relative;
+    width: 10%;
+        padding: 0px;
+}
+    
+	div#navbarSupportedContent {
+	    height: 200px;
+	}
+
+    .logo{
+        width: 40%;
+        height: auto;
+        margin-left: 30%;
+    }
+	.navbar-brand {
+	    font-size: 1.7em;
+        margin: 0 auto;
+	}
+
+    .TitleCardHeader {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Luchador-Regular', Arial, sans-serif;
+    font-style: italic;
+    letter-spacing: 7px;
+}
+    
+	/* footer */
+
+	.footer_headline {
+	    font-size: 2.5em;
+	}
+
+	.icons {
+	    position: relative;
+	    display: inline-block;
+	    font-size: 3em;
+	    width: 100%;
+	    float: left;
+	    padding: 0px;
+	    margin: 30px auto;
+	    text-align: center;
+	}
+
+	/* About */
+	.col-sm-6.aboutPhotos {
+	    position: relative;
+	}
+
+	.Newsletter_background {
+	    position: relative;
+	    background-color: #008B92;
+	    width: 100%;
+	}
+
+	.AboutUs_NewsletterText {
+	    width: 100%;
+	}
+
+	.AboutUs_NewsletterSignupText {
+	    font-size: 1.5em;
+	}
+
+	.NewsletterEmail {
+	    width: 80%;
+	}
+
+	.NewsLetterButton {
+	    width: 80%;
+	}
+    .about{
+        width: 100%;
+    }
+    .chef{
+        width: 100%;
+        float: left;
+    }
+
+	/* Contact */
+	.Contact {
+	    width: 100%;
+	}
+    .contactTitle{
+        font-size: 1.8em;
+        width: 100%;
+
+    }
+	.headline {
+	    font-size: 1.8em;
+	}
+
+	.headline_copyText {
+	    width: 100%
+	}
+
+	.dropdown {
+	    width: 100%;
+	}
+
+	.CateringForm,
+	.TruckStopForm,
+	.GeneralForm {
+	    width: 100%;
+	}
+
+	.form-row {
+	    margin-right: 10px;
+	}
+}
+/* bootstrap defualt setting edits below */
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}

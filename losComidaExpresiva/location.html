@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/joa1dgh.css">
+    <script src="js/script.js"></script>
+
+    <title>location</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" class="logo" width="30" height="30" alt="los comida expersiva logo">
+        </a>
+        <a class="navbar-brand" href="index.html">Los comida expresiva</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <h1 class="headline"><strong style="color:#000000">~</strong>This is where we are<strong style="color:#000000">~</strong></h1>
+        <div class="row">
+
+            <div class="col-lg-5 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="headline_copyText_location">Looking to find where we are? Use the map to see where we are at. If your in a hurry, wanting to place a to go order, let us know what you would like below.</p>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Your Name</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Your Email</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="jane.doe@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Leave us what you would like to order"></textarea>
+                            </div>
+                            <button class="btn btn-outline-primary iconButton">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div id="map-container-google-11" class="z-depth-1-half map-container-6 card" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203131.55689798464!2d-121.95749820192718!3d37.296779151464506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcae48af93ff5%3A0xb99d8c0aca9f717b!2sSan%20Jose%2C%20CA!5e0!3m2!1sen!2sus!4v1586724058212!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="row extra">
+            <div class="col-sm-4">
+                <h1 class="day">Monday - Wednesday</h1>
+                <ul class="mealTime">
+                    <li class="mealTime_info_day">Lunch:</li>
+                    <li class="mealTime_info_time">11am - 3pm</li>
+                </ul>
+                <ul class="mealTime">
+                    <li class="mealTime_info_day">Dinner:</li>
+                    <li class="mealTime_info_time">5pm - 8pm</li>
+                </ul>
+                <ul class="mealTime">
+                    <li class="mealTime_info_day">Late Night:</li>
+                    <li class="mealTime_info_time">8pm - 12am</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h1 class="day">Thursday - Sunday</h1>
+                <ul class="mealTime">
+                    <li class="mealTime_info_day">Lunch:</li>
+                    <li class="mealTime_info_time">11am - 3pm</li>
+                </ul>
+                <ul class="mealTime">
+                    <li class="mealTime_info_day">Dinner:</li>
+                    <li class="mealTime_info_time">5pm - 8pm</li>
+                </ul>
+                <ul class="mealTime">
+                    <li class="mealTime_info_day">Late Night:</li>
+                    <li class="mealTime_info_time">8pm - 12am</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h1 class="day">Contact Info</h1>
+                <ul class="mealTime">
+                    <i class="fa fa-map-marker"></i>
+                    <p class="addressOne">San Jose, CA 94088</p>
+                    <p class="addressTwo">United States</p>
+                </ul>
+                <ul class="mealTime">
+                    <i class="fa fa-phone"></i>
+                    <p>Monday - Friday</p>
+                    <p class="addressOne">5:00pm - 2:00am</p>
+                    <p class="addressTwo"><a class="phone link" href="tel:1-562-867-5309">Click to Call!</a></p>
+                </ul>
+                <ul class="mealTime">
+                    <i class="fa fa-envelope addressOne"></i>
+                    <p class="addressOne"><a class="link" href="mailto:loscomidaexpersivafoodtruck.com">info@LCEfoodtruck.com</a></p>
+                    <p class="addressOne"><a class="link" href="mailto:loscomidaexpersivafoodtruck.com">sales@LCEfoodtruck.com</a></p>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row extra"></div>
+        <div class="row footer">
+            <div class="col-sm-3 footer_section">
+                <h3 class="col- footer_headline">Your Style</h3>
+                <p class="footer_headline_text">Express your style through different food choice, who you eat with and the people who you talk to.<br>
+                    <a class="link" href="menu.html">explore more</a>
+                </p>
+            </div>
+            <div class="col-sm-3 footer_section">
+                <h3 class="col- footer_headline">Your Story</h3>
+                <p class="footer_headline_text">Your story start off where you had your last meal. Start you new adventure <br>
+                    <a class="link" href="index.html">explore more</a>
+                </p>
+            </div>
+            <div class="col-sm-3 footer_section">
+                <h3 class="footer_headline">Your Memories</h3>
+                <p class="footer_headline_text">Start creating, expressing and sharing your memories when you visit us <br>
+                    <a class="link" href="instagram.com" target="_blank">explore more</a>
+                </p>
+            </div>
+            <div class="col-sm-3 footer_section">
+                <h3 class="col- footer_headline">Our Story</h3>
+                <p class="footer_headline_text">We are here to tell you our story through food, family and getting to know each other. Learn more
+                    <a class="link" href="menu.html" target="_blank">explore more</a>
+                </p>
+                <div class="icons">
+                    <i class="fa fa-facebook-official footerIcons"></i>
+                    <i class="fa fa-twitter footerIcons"></i>
+                    <i class="fa fa-instagram footerIcons"></i>
+                    <i class="fa fa-yelp footerIcons"></i>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <p class="copywrite">&copy; Copyright 2019 - 2020. All rights reserved. Los Comida Expresiva &#174;</p>
+            </div>
+        </div>
+
+    </div><!-- end of wrapper -->
+
+</body>
+
+</html>
